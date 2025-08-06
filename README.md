@@ -11,6 +11,11 @@ A full-stack web application built with the **MERN** (MongoDB, Express.js, React
 - 🪄 Styled using TailwindCSS for a responsive and modern design
 - 🔄 Real-time feedback with alerts on actions
 
+## 🚀 Live Demo
+
+<!-- Add your live site URL here -->
+[View Live Site](https://full-stack-project-fd69ilmqy-fa-23-bscs-466-3688s-projects.vercel.app/)
+
 ## 📁 Project Structure
 
 ```
