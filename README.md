@@ -1,12 +1,89 @@
-# React + Vite
+User Enquiry Form - MERN Stack Project
+A full-stack web application built with the MERN (MongoDB, Express.js, React.js, Node.js) stack that allows users to submit enquiry forms and manage submitted data. This project demonstrates CRUD operations, state management with React hooks, RESTful API communication, and MongoDB integration.
+🧠 Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📝 Users can submit an enquiry form with name, email, phoneNumber, and message
+📋 Admin view displays all submitted enquiries
+🛠️ Update and delete operations for entries
+🧾 Frontend and backend fully connected using Axios
+🪄 Styled using TailwindCSS for a responsive and modern design
+🔄 Real-time feedback with alerts on actions
 
-Currently, two official plugins are available:
+📁 Project Structure
+/fullStackProject
+│
+├── /backend
+│   ├── index.js           # Main server entry point
+│   ├── db.js             # MongoDB connection logic
+│   └── model.js          # Mongoose schema/model for enquiries
+│
+├── /frontend
+│   ├── /src
+│   │   ├── App.jsx       # React root component
+│   │   ├── Form.jsx      # Enquiry form + admin table
+│   │   └── index.css     # Tailwind styles
+│   └── tailwind.config.js # Tailwind config file
+│
+├── package.json (backend) # Backend dependencies
+├── package.json (frontend) # Frontend dependencies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 How to Run the Project
+1. Clone the Repository
+git clone https://github.com/H0NEYP0T-466/fullStackProject.git
+cd fullStackProject
 
-## Expanding the ESLint configuration
+2. Setup Backend
+cd backend
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Create a .env file in the backend directory:
+MONGO_URI=mongodb://localhost:27017/enquiries
+PORT=5000
+
+Start the backend server:
+node index.js
+
+3. Setup Frontend
+cd ../frontend
+npm install
+
+Start the frontend:
+npm run dev
+
+
+Note: Ensure both frontend and backend servers are running concurrently.
+
+🔧 Tech Stack
+
+Frontend: React.js, Axios, TailwindCSS
+Backend: Node.js, Express.js
+Database: MongoDB, Mongoose
+Tools: Vite, Concurrently, Nodemon
+
+📦 Dependencies
+Backend
+
+express
+mongoose
+cors
+dotenv
+
+Frontend
+
+react
+axios
+tailwindcss
+vite
+
+💡 Future Improvements
+
+Authentication system for admin
+Form validations (frontend & backend)
+Deploy to Vercel (frontend) and Render or Railway (backend)
+Add loading spinners and skeletons
+Toast notifications for actions
+
+🙌 Contributing
+Contributions are welcome! Please fork the repository, make changes, and open a pull request.
+📄 License
+This project is licensed under the MIT License.
