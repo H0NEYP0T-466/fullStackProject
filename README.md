@@ -1,15 +1,19 @@
-User Enquiry Form - MERN Stack Project
-A full-stack web application built with the MERN (MongoDB, Express.js, React.js, Node.js) stack that allows users to submit enquiry forms and manage submitted data. This project demonstrates CRUD operations, state management with React hooks, RESTful API communication, and MongoDB integration.
-🧠 Features
+# User Enquiry Form - MERN Stack Project
 
-📝 Users can submit an enquiry form with name, email, phoneNumber, and message
-📋 Admin view displays all submitted enquiries
-🛠️ Update and delete operations for entries
-🧾 Frontend and backend fully connected using Axios
-🪄 Styled using TailwindCSS for a responsive and modern design
-🔄 Real-time feedback with alerts on actions
+A full-stack web application built with the **MERN** (MongoDB, Express.js, React.js, Node.js) stack that allows users to submit enquiry forms and manage submitted data. This project demonstrates **CRUD** operations, state management with React hooks, RESTful API communication, and MongoDB integration.
 
-📁 Project Structure
+## 🧠 Features
+
+- 📝 Users can submit an enquiry form with name, email, phoneNumber, and message
+- 📋 Admin view displays all submitted enquiries
+- 🛠️ Update and delete operations for entries
+- 🧾 Frontend and backend fully connected using Axios
+- 🪄 Styled using TailwindCSS for a responsive and modern design
+- 🔄 Real-time feedback with alerts on actions
+
+## 📁 Project Structure
+
+```
 /fullStackProject
 │
 ├── /backend
@@ -26,64 +30,87 @@ A full-stack web application built with the MERN (MongoDB, Express.js, React.js,
 │
 ├── package.json (backend) # Backend dependencies
 ├── package.json (frontend) # Frontend dependencies
+```
 
-🚀 How to Run the Project
-1. Clone the Repository
+## 🚀 How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/H0NEYP0T-466/fullStackProject.git
 cd fullStackProject
+```
 
-2. Setup Backend
+### 2. Setup Backend
+
+```bash
 cd backend
 npm install
+```
 
-Create a .env file in the backend directory:
+Create a `.env` file in the `backend` directory:
+
+```
 MONGO_URI=mongodb://localhost:27017/enquiries
 PORT=5000
+```
 
 Start the backend server:
-node index.js
 
-3. Setup Frontend
+```bash
+node index.js
+```
+
+### 3. Setup Frontend
+
+```bash
 cd ../frontend
 npm install
+```
 
 Start the frontend:
+
+```bash
 npm run dev
+```
 
+> **Note:** Ensure both frontend and backend servers are running concurrently.
 
-Note: Ensure both frontend and backend servers are running concurrently.
+## 🔧 Tech Stack
 
-🔧 Tech Stack
+- **Frontend:** React.js, Axios, TailwindCSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB, Mongoose
+- **Tools:** Vite, Concurrently, Nodemon
 
-Frontend: React.js, Axios, TailwindCSS
-Backend: Node.js, Express.js
-Database: MongoDB, Mongoose
-Tools: Vite, Concurrently, Nodemon
+## 📦 Dependencies
 
-📦 Dependencies
-Backend
+### Backend
 
-express
-mongoose
-cors
-dotenv
+- express
+- mongoose
+- cors
+- dotenv
 
-Frontend
+### Frontend
 
-react
-axios
-tailwindcss
-vite
+- react
+- axios
+- tailwindcss
+- vite
 
-💡 Future Improvements
+## 💡 Future Improvements
 
-Authentication system for admin
-Form validations (frontend & backend)
-Deploy to Vercel (frontend) and Render or Railway (backend)
-Add loading spinners and skeletons
-Toast notifications for actions
+- Authentication system for admin
+- Form validations (frontend & backend)
+- Deploy to Vercel (frontend) and Render or Railway (backend)
+- Add loading spinners and skeletons
+- Toast notifications for actions
 
-🙌 Contributing
+## 🙌 Contributing
+
 Contributions are welcome! Please fork the repository, make changes, and open a pull request.
-📄 License
-This project is licensed under the MIT License.
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
